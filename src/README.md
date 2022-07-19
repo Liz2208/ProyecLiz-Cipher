@@ -3,8 +3,8 @@
 ## Índice
 
 * [1. Info sobre proceso y desiciones de diseño](#1-Diseño)
-* [2. Usuarios(#2-Usuarios)
-* [3. Necesidades de los usuarios (#3 Necesidades)
+* [2. Usuarios](#2-Usuarios)
+* [3. Necesidades de los usuarios] (#3 Necesidades)
 * [4. Checklist](#4-checklist)
 
 ***
