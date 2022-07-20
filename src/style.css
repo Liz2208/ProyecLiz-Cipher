@@ -3,48 +3,42 @@
   padding: 0; /* */
   box-sizing: border-box; /*delimita*/
   font-family: 'Titillium Web', sans-serif;
-}
-body {
-  height: 100vh;/* le estamos diciendo que siempre se ajuste a la altura de la pantalla en donde se abra la pagina view height*/
-  width: 100vw; /* aqui le digo: siempre se ajuste a la anchura de la pantalla  view widht */
-
-  display: flex;
-  align-items: left;
-}
-.contenedor-principal{
-   height: 70vh; /* altura */
-  width:100vw; /* ancho */
-  display:flex; /* esta es una propiedad para cambiar como se muestran los elementos en la pagina*/
-  flex-direction: column; /* propiedad para cambiar la direccion en la que se muestran*/
-  justify-content: space-evenly; /*modificar de forma horizal*/
-  align-items: center; /*modificar de forma vertical*/
-  color: #A8088E;
-}
-.contenedor1{
-   display: flex;
-  flex-direction: column; /*cambias sentido en el que se modifica los elementos*/
-  justify-content: flex-end;/*vertical*/
-  align-items:baseline; /*horizontal*/
-  height: 70vh;
-  width: 80vw;
-  font-weight: bold; /* con esto hacemos la letra mas gruesa*/
-}
-
-
-.contenedo2 input{
-  background-color: #F60404;
 
 }
 
-#boton-cifrar{
+.centrar {
+  text-align: center;
+}
+
+.encabezado{
+  font-family: 'Blaka', cursive;
+  font-family: 'Henny Penny', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  color: #2CE6F1;
+}
+
+.resultado{
+text-align: center;
+  font-size: 50px;
+  font.weight: bold;
+  color: #E2A0DC;
+  font-family: 'Blaka', cursive;
+  font-family: 'Henny Penny', cursive;
+  font-family: 'Permanent Marker', cursive;
+  border-style: dotted;
+  border-color: white;
+
+}
+
+#codificar{
+text-align: center;
   background-color:#B37EF6;
   width: 100px;
   height: 50px;
-}
-
-
-#boton-decifrar{
-  background-color:#B37EF6;
-  width: 100px;
-  height: 50px;
+  font-size: 22px;
+  font.color: black;
+  font-family: 'Blaka', cursive;
+  font-family: 'Henny Penny', cursive;
+  font-family: 'Permanent Marker', cursive;
 }
