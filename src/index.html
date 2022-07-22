@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head >
 	<meta charset="utf-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Henny+Penny&family=Permanent+Marker&display=swap" rel="stylesheet">
   <script src="cipher.js"></script>
+  <script src="index.js"></script>
 <link rel="stylesheet" href="./style.css">
 <title>Caesar Cipher </title>
 </head>
 
-<body background="fondo2.jpg">
+<body id = "fondo" background="azul.jpg" >
+
 <div id="root" class="centrar">
+
 <h1 class="encabezado">CHAT JUEZ - AUXILIAR</h1>
-  <textarea id="cadena"></textarea>
-  <input id="codificar" type="button" value="codificar" onclick="codificar()">
-  <br>
-  <div class="resultado" id="resultado"></div>
+
+<h2 class="instruccion">INSERTA TU TEXTO A CODIFICAR <textarea id="cadena" ></textarea></h2>
+  <div class="resultado" id="resultado" ></div>
+<input id="codificar" type="button" value="codificar" onclick="codificar()">
+    <input id="decodificar" type="button" value="decodificar" onclick="decodificar()">
+    <br>
+<img src="escribo.gif" alt="escribo.jpg">
 </div>
 
 </body>
-</html>
 
+</html>
