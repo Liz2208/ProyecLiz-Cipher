@@ -44,5 +44,5 @@ function codificar()
 }
 function decodificar()
 {
-  document.getElementById("resultado").innerHTML=caesar.decode(document.getElementById("cadena").value, 3);
+  document.getElementById("resultado").innerHTML=caesar.decode(document.getElementById("cadena").value, 0);
 }
