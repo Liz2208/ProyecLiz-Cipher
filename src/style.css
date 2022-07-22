@@ -8,37 +8,115 @@
 
 .centrar {
   text-align: center;
+
 }
 
-.encabezado{
+#fondo{
+    background-repeat: no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+.encabezado{ /*chat-juez-aux */
   font-family: 'Blaka', cursive;
   font-family: 'Henny Penny', cursive;
   font-family: 'Permanent Marker', cursive;
   font-size: 60px;
   color: #2CE6F1;
+  padding: 50px;
+    -webkit-text-stroke: 2px white;
+
 }
 
-.resultado{
+.instruccion{ /*Inserta tu texto */
+  font-family: 'Blaka', cursive;
+  font-family: 'Henny Penny', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  color: #2CE6F1;
+  padding: 50px;
+}
+p{
+  font-family: 'Blaka', cursive;
+  font-family: 'Henny Penny', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  color: #2CE6F1;
+  padding: 50px;
+}
+
+.pos{
+  color:white;
+  font-size: 30px;
+  columns: 3;
+  rows: 30;
+}
+
+textarea {background-color: transparent; /* area donde se inserta el texto*/
+cols="30";
+rows="30";
+  border: 4px solid #2CE6F1;
+  font-size: 30px;
+font.weight:bold;
+color:white;
+}
+
+.resultado{ /*mostrando resultado*/
 text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   font.weight: bold;
-  color: #E2A0DC;
+  color: #2CE6F1;
+  -webkit-text-stroke: 2px black; /*borde del texto */
   font-family: 'Blaka', cursive;
   font-family: 'Henny Penny', cursive;
   font-family: 'Permanent Marker', cursive;
   border-style: dotted;
   border-color: white;
-
+  border-width: 5px;
+  cols="30";
+   rows="30";
 }
 
-#codificar{
+.resultado2{ /*mostrando resultado*/
 text-align: center;
-  background-color:#B37EF6;
-  width: 100px;
-  height: 50px;
-  font-size: 22px;
+  font-size: 60px;
+  font.weight: bold;
+  color: #2CE6F1;
+  -webkit-text-stroke: 2px black; /*borde del texto */
+  font-family: 'Blaka', cursive;
+  font-family: 'Henny Penny', cursive;
+  font-family: 'Permanent Marker', cursive;
+  border-style: dotted;
+  border-color: white;
+  border-width: 5px;
+}
+
+#codificar{  /*boton codificar*/
+text-align: center;
+  background-color:#2CE6F1;
+  width: 150px;
+  height: 60px;
+  font-size: 25px;
   font.color: black;
   font-family: 'Blaka', cursive;
   font-family: 'Henny Penny', cursive;
   font-family: 'Permanent Marker', cursive;
+}
+
+#decodificar{  /*boton decodificar*/
+text-align: center;
+  background-color:#2CE6F1;
+  width: 200px;
+  height: 60px;
+  font-size: 25px;
+  font.color: black;
+  font-family: 'Blaka', cursive;
+  font-family: 'Henny Penny', cursive;
+  font-family: 'Permanent Marker', cursive;
+}
+
+img{
+  padding: 100px;
+  width=200px ;
+  height=200px;
 }
