@@ -48,5 +48,5 @@ function encode() //imprimimos el resultado
 }
 function decode()
 {
-  document.getElementById("resultado2").innerHTML=cipher.decode(document.getElementById("cadena").value, 0);
+  document.getElementById("resultado").innerHTML=cipher.decode(document.getElementById("cadena").value, 0);
 }
