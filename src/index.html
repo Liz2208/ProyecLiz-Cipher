@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <h1>Hello world!</h1>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
 <html lang="es">
 <head >
 	<meta charset="utf-8">
@@ -18,12 +30,18 @@
 <h1 class="encabezado">CHAT JUEZ - AUXILIAR</h1>
 
 <h2 class="instruccion">INSERTA TU TEXTO A CODIFICAR <textarea id="cadena" ></textarea></h2>
+
+<p>ingrese espacios a mover</p>
+<input type="offset" id="offset"></input>
+<input id="encode" type="button" value="codificar" onclick="encode()">
+    <input id="decode" type="button" value="decodificar" onclick="decode()">
+		<br>
+		<img src="escribo.gif" alt="escribo.jpg">
+
   <div class="resultado" id="resultado" ></div>
-<input id="codificar" type="button" value="codificar" onclick="codificar()">
-    <input id="decodificar" type="button" value="decodificar" onclick="decodificar()">
+
     <br>
-<img src="escribo.gif" alt="escribo.jpg">
-</div>
+</div> <!-- Cierra el centrado -->
 
 </body>
 
