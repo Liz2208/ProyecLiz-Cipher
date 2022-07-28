@@ -45,6 +45,15 @@ p{
   padding: 50px;
 }
 
+input{
+  cols="5";
+  rows="5";
+  background-color: transparent;
+  border: 4px solid #2CE6F1;
+  font-size: 30px;
+font.weight:bold;
+color:white;
+}
 
 textarea {background-color: transparent; /* area donde se inserta el texto*/
 cols="30";
