@@ -1,48 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
-<html lang="es">
-<head >
-	<meta charset="utf-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Blaka&family=Henny+Penny&family=Permanent+Marker&display=swap" rel="stylesheet">
-  <script src="cipher.js"></script>
-  <script src="index.js"></script>
-<link rel="stylesheet" href="./style.css">
-<title>Caesar Cipher </title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Henny+Penny&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Cesar Cipher Liz :)</title>
 </head>
 
-<body id = "fondo" background="azul.jpg" >
+<body id = "fondo" background="azul.jpg">
+  <div class="centrar">
+      <h1 class="encabezado">CHAT JUEZ - AUXILIAR</h1>
+      <p class="info">ESCRIBE TU TEXTO A CIFRAR </p>
+      <textarea class="textarea" id="textArea"></textarea>
+      <p class="info">ELIGE LOS ESPACIOS A MOVER</p>
+        <input type="number" class="user-offset" id="userOffset" style="width:50px; height:50px" >
+        <p id="userText"></p>
+          <button type="button" class="cifrar-btn" id="submitButton">CIFRAR</button>
+          <button type="button" class="descifrar-btn" id="decipherButton">Decifrar</button>
+        <div contentEditable=true  class="result fixed-width" id="resultado" style="color:#2CE6F1";></div>
 
-<div id="root" class="centrar">
-
-<h1 class="encabezado">CHAT JUEZ - AUXILIAR</h1>
-
-<h2 class="instruccion">INSERTA TU TEXTO A CODIFICAR <textarea id="cadena" ></textarea></h2>
-
-<p>ingrese espacios a mover</p>
-<input type="offset" id="offset"></input>
-<input id="encode" type="button" value="codificar" onclick="encode()">
-    <input id="decode" type="button" value="decodificar" onclick="decode()">
-		<br>
-		<img src="escribo.gif" alt="escribo.jpg">
-
-  <div class="resultado" id="resultado" ></div>
-
-    <br>
+        </div>
+    </div>
 </div> <!-- Cierra el centrado -->
 
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
