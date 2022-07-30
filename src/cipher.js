@@ -1,52 +1,47 @@
-var cipher = cipher|| (function() {
-  var doStaff = function (txt, desp, action) {
-    var replace = (function() { //llamando funciones
-      var abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
-        'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']; //aqui llamo las letraspara reemplazar
-      var l = abc.length; //asignando la variable, length es la longitud de la palabra
-      return function(c) { //nombramos esta funcion como  c para llamarla mas abajo
-        var i = abc.indexOf(c.toLowerCase()); //devuelve en mayusculas el valor de la cadena
-        if (i != -1) {
-          var pos = i;
-          if (action) {
-            pos += desp;
-            pos -= (pos >= l)?l:0;
-          } else {
-            // backward
-            pos -= desp;
-            pos += (pos < 0)?l:0; //condicion de posiciones si esta vacia o con texto
-          }
-          return abc[pos];//aqui llamamos la variable aabc que son las letras a reemplazar
-        }
-        return c; //devuelve el valor de la funcion c
-      };
-    })();
-    var re = (/([a-z])/ig); //formula para reemplazar
-    return String(txt).replace(re, function (match) { //metodo replace
-      return replace(match);
-    });
-  };
-
-  return {
-      encode: function(txt, desp) { //reemplaza todos los caracteres excepto los reservados
-      return doStaff(txt, desp, true);
-    },
-      decode: function(txt, desp) {
-      return doStaff(txt, desp, false);
+var cipher = {
+  encode: (text, key) => {
+    let asciiToLetter;
+    for (let i = 0; i < text.length; i++) {
+      let ascii = text.charCodeAt(i);
+      if (ascii >= 65 && ascii <= 90) {
+        // Formula para letras mayúsculas
+        let formula = ((ascii - 65 + key) % 26 + 65);
+        resultEncrypt[i] = formula;
+        console.log(formula);
+      } else if (ascii >= 97 && ascii <= 122) {
+        // Formula para letras minúsculas
+        let formulaDos = ((ascii - 97 + key) % 26 + 97);
+        resultEncrypt[i] = formulaDos;
+      } else {
+        let formulaAscii = ascii;
+        resultEncrypt[i] = formulaAscii;
+      }
     }
-  };
-})();
+    for (let j = 0; j < resultEncrypt.length; j++) {
+      asciiToLetter = String.fromCharCode(resultEncrypt[j]);
+      resultEncrypt[j] = asciiToLetter;
+    }
+    return resultEncrypt;
+  },
 
-
-function encode() //imprimimos el resultado
-{
-  document.getElementById("resultado").innerHTML=cipher.encode(document.getElementById("cadena").value, document.getElementById("offset").value);
-  console.log("Este es el espacio a mover", offset.value);
-  console.log("Este es el texto", cadena.value);
-  console.log("Este es el resultado", resultado.value);
-
-}
-function decode()
-{
-  document.getElementById("resultado").innerHTML=cipher.decode(document.getElementById("cadena").value, 0);
-}
+  decode: (resultEncrypt, key) => {
+    for (let k = 0; k < resultEncrypt.length; k++) {
+      let asciiDos = resultEncrypt[k].charCodeAt();
+      if (asciiDos <= 91 && asciiDos >= 61) {
+        let formulaTres = (((asciiDos + 65) - key) % 26 + 65);
+        resultDecrypt[k] = formulaTres;
+      } else if (asciiDos <= 122 && asciiDos >= 95) {
+        let formulaCuatro = (((asciiDos - 122) - key) % 26 + 122);
+        resultDecrypt[k] = formulaCuatro;
+      } else {
+        let formulaAsciiDos = asciiDos;
+        resultDecrypt[k] = formulaAsciiDos;
+      }
+    }
+    for (let l = 0; l < resultDecrypt.length; l++) {
+      let asciiToLetterTwo = String.fromCharCode(resultDecrypt[l]);
+      resultDecrypt[l] = asciiToLetterTwo;
+    }
+    return resultDecrypt;
+  }
+};
