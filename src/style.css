@@ -8,11 +8,12 @@
 
 .centrar {
   text-align: center;
-}
 
+}
 #fondo{
     background-repeat: no-repeat center center fixed;
     background-size: cover;
+
 }
 
 .encabezado{ /*chat-juez-aux */
@@ -24,7 +25,6 @@
   padding: 50px;
     -webkit-text-stroke: 2px white;
 }
-
 p{ //escribe tu texto a cifrar
   font-family: 'Blaka', cursive;
   font-family: 'Henny Penny', cursive;
@@ -33,7 +33,6 @@ p{ //escribe tu texto a cifrar
   color: #2CE6F1;
   padding: 30px;
 }
-
 textarea {
   background-color: transparent; /* area donde se inserta el texto*/
 cols="10";
@@ -74,6 +73,7 @@ contentEditable{
   font-size: 30px;
 font.weight:bold;
 font.color: #2CE6F1;
+
 }
 
 .fixed-width,
@@ -100,8 +100,11 @@ font.color: #2CE6F1;
     margin-top: 10%;
 }
 
+
+
 :placeholder {
     color: #a9a9a9;
     font-size: 50rem;
     text-align:center;
 }
+
