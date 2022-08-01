@@ -1,6 +1,8 @@
 var cipher = {
   encode: (text, key) => {
     let asciiToLetter;
+    let resultEncrypt = [];
+    var resultEncryptstring = '';
     for (let i = 0; i < text.length; i++) {
       let ascii = text.charCodeAt(i);
       if (ascii >= 65 && ascii <= 90) {
@@ -20,11 +22,15 @@ var cipher = {
     for (let j = 0; j < resultEncrypt.length; j++) {
       asciiToLetter = String.fromCharCode(resultEncrypt[j]);
       resultEncrypt[j] = asciiToLetter;
+      resultEncryptstring += asciiToLetter;
+
     }
-    return resultEncrypt;
+    return resultEncryptstring;
+
   },
 
   decode: (resultEncrypt, key) => {
+    let resultDecrypt = [];
     for (let k = 0; k < resultEncrypt.length; k++) {
       let asciiDos = resultEncrypt[k].charCodeAt();
       if (asciiDos <= 91 && asciiDos >= 61) {
@@ -45,3 +51,4 @@ var cipher = {
     return resultDecrypt;
   }
 };
+export default cipher;
