@@ -35,22 +35,22 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
   el producto.
 * [hecho ] `README.md` explica claramente cómo el producto soluciona los
   problemas/necesidades de los usuarios.
-* [check] Usa VanillaJS.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
-* [ ] Pasa linter con configuración provista.
-* [ ] Pasa pruebas unitarias.
-* [ ] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
+* [hecho] Usa VanillaJS.
+* [hecho ] Implementa `cipher.encode`.
+* [hecho ] Implementa `cipher.decode`.
+* [hecho ] Pasa linter con configuración provista.
+* [hecho ] Pasa pruebas unitarias.
+* [hecho ] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
   mínimo del 50% de _branches_.
-* [ ] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
+* [hecho ] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
   cifrado/descifrado.
-* [ ] Interfaz permite escribir un texto para ser cifrado.
-* [ ] Interfaz muestra el resultado del cifrado correctamente.
-* [ ] Interfaz permite escribir un texto para ser descifrado.
-* [ ] Interfaz muestra el resultado del descifrado correctamente.
+* [hecho ] Interfaz permite escribir un texto para ser cifrado.
+* [hecho ] Interfaz muestra el resultado del cifrado correctamente.
+* [hecho ] Interfaz permite escribir un texto para ser descifrado.
+* [ hecho] Interfaz muestra el resultado del descifrado correctamente.
 
 ### Parte Opcional: "Hacker edition"
 
-* [ ] Cifra/descifra minúsculas
+* [hecho ] Cifra/descifra minúsculas
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * [ ] Permite usar un `offset` negativo.
