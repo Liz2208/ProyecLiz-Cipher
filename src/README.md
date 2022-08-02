@@ -35,7 +35,7 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
   el producto.
 * [hecho ] `README.md` explica claramente cómo el producto soluciona los
   problemas/necesidades de los usuarios.
-* [ ] Usa VanillaJS.
+* [check] Usa VanillaJS.
 * [ ] Implementa `cipher.encode`.
 * [ ] Implementa `cipher.decode`.
 * [ ] Pasa linter con configuración provista.
