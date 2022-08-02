@@ -11,7 +11,7 @@
 
 ## 1. Diseño
 
-Este chat esta diseñado basado en la experiencia que tengo sobre como se llevan actualmente las comunicaciones entre jueces y sus auxiliares dentro de una audiencia, ya que el auxiliar permanece en su oficina y el juez dentro de la sala y requiere apoyo para investigar ciertas cosas o para saber fechas proximas sobre su agenda para poder programar la siguiente. El diseño lo hice dinámico y facil de usar.
+Este chat esta diseñado basado en la experiencia que tengo sobre como se llevan actualmente las comunicaciones entre jueces y sus auxiliares dentro de una audiencia, ya que el auxiliar permanece en su oficina y el juez dentro de la sala y requiere apoyo para investigar ciertas cosas o para saber fechas proximas sobre su agenda para poder programar la siguiente. El diseño lo hice dinámico y facil de usar para no complicar la comunicación entre ambos.
 ![image](https://user-images.githubusercontent.com/108889788/182461246-2f537455-fcfa-403f-84e4-5843d17530f5.png)
 
 
