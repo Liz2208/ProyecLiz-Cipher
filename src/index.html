@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" >
     <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Henny+Penny&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+   
     <title>Cesar Cipher Liz :)</title>
 </head>
 
 <body id = "fondo" background="azul.jpg">
   <div class="centrar">
       <h1 class="encabezado">CHAT JUEZ - AUXILIAR</h1>
+      <img src="escribo.gif" alt="escribo.gif"/>
       <p class="info">ESCRIBE TU TEXTO A CIFRAR </p>
       <textarea class="textarea" id="textArea"></textarea>
       <p class="info">ELIGE LOS ESPACIOS A MOVER</p>
@@ -22,14 +24,12 @@
         <p id="userText"></p>
           <button type="button" class="cifrar-btn" id="submitButton">CIFRAR</button>
           <button type="button" class="descifrar-btn" id="decipherButton">Decifrar</button>
-        <div contenteditable="true"  class="result fixed-width" id="resultado" style="color:#2CE6F1">
-        <img src="escribo.gif" alt="escribo.gif"/>
-        </div>
-    </div>
+        <div contenteditable="true"  class="result" id="resultado" style="color:#2CE6F1" ></div>
+   
+  </div> <!-- Cierra el centrado -->
 
+<script  src="index.js" type="module"></script>
 
-
-    <script type="module"  src="index.js"></script>
 </body>
 
 </html>
